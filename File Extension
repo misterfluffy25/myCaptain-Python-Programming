@@ -1,0 +1,16 @@
+Written By - Kunwar Yashaswee Chhaunker
+
+Problem - 
+
+Write a Python program to accept a filename from the user and print the extension of that.
+
+Solution - 
+
+file_name = input("Input Filename: ")
+file_extension = file_name.split(".")
+print ("Inserted file from User:",file_name,"and File Extension: "+ repr(file_extension[-1]))
+
+Output - 
+
+Input Filename: helloworld.py                                                                                                                 
+Inserted file from User: helloworld.py and File Extension: 'py'
