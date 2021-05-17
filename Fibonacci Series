@@ -1,0 +1,52 @@
+Written By - Kunwar Yashaswee Chhaunker
+
+Probelem - 
+
+Write a Python Program for Fibonacci numbers.
+The Fibonacci numbers are the numbers in the following integer sequence. 
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, . . ., nth term
+In mathematical terms, the sequence Fn of Fibonacci numbers is defined by the recurrence relation
+
+Solution - 
+
+#ENTER THE NUMBER OF ELEMENTS WANT TO PRINT IN SERIES
+elements = int(input("Enter number of elements: "))
+
+#ELEMENT 1 & ELEMENT 2
+n1, n2 = 0, 1
+count = 0
+
+#CHECKING IF THE NUMBER OF ELEMENTS IS VALID OR NOT
+if elements <= 0:
+   print("Please, Enter Positive number: Starting - 1")
+elif elements == 1:
+   print("Printing upto: ",elements,":")
+   print(n1)
+else:
+   print("Required Fibonacci Series: :")
+   while count < elements:
+       print(n1)
+       terms = n1 + n2
+#UPDATION 
+       n1 = n2
+       n2 = terms
+       count += 1
+
+Output - 
+
+Enter number of elements: 10
+Required Fibonacci Series: :
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
