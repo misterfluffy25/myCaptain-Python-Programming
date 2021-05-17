@@ -1,0 +1,40 @@
+Written By - Kunwar Yashaswee Chhaunker
+
+Problem -
+
+Write a Python program to print all positive numbers in a range.
+Your Input and output must look something like this
+Input: list1 = [12, -7, 5, 64, -14] Output: 12, 5, 64
+Input: list2 = [12, 14, -95, 3] Output: [12, 14, 3]
+
+Solution - 
+
+#CREATING AN EMPTY LIST,
+lst = []
+
+#NUMBER OF ITEMS IN A LIST,
+n = int(input("Enter the number of elements: "))
+
+#ITERATING TO THE RANGE and INPUT THE ITEMS,
+for i in range(0, n):
+    ele = int(input())
+    #ADDING ITEMS OT THE LIST
+    lst.append(ele) 
+    
+#CHECKING and PRINTING THE POSITIVE NUMBER,
+for i in range(0, n):
+    if lst[i] > 0:
+        print(lst[i])
+
+
+Output - 
+
+Enter the number of elements: 5
+12
+-7
+5
+64
+-14
+12
+5
+64
